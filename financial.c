@@ -47,13 +47,10 @@ printf("Your total sales cost is %f\nYour total sales quantity is %f.\n",totalsa
     }
     else{
     printf("Your 1 %s' cost is %f %s\n",coinname,cost,currency);
-<<<<<<< HEAD
     printf("I hope you don't lose your money :)");   
     }
     puts( "" ); 
-=======
     printf("I hope you don't lose your money :)");    
->>>>>>> c1cae0dea8d14f8d36c91b387deb6eeda7efa945
 
     
     return 0;
