@@ -50,8 +50,8 @@ printf("Your total sales cost is %f\nYour total sales quantity is %f.\n",totalsa
     printf("Your 1 %s' cost is %f %s\n",coinname,cost,currency);
     printf("I hope you don't lose your money :)");   
     }
-     
-    printf("I hope you don't lose your money :)");     
-    puts( "" );
+    
+    puts( "" );  
+
     return 0;
 }
