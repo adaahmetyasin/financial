@@ -22,7 +22,7 @@ int main(){
         totalpurchasecost += purchasecost;
         totalpurchasequantity += purchasequantity;
 
-        printf("Do you want to repeat the operation?(Y/N): \n");
+        printf("Type yes(y) to enter purchase information, no(n) to enter sales information:\n ");
         scanf("%s", &choice);
      } while (choice == 'y' || choice == 'Y');
 
@@ -35,7 +35,7 @@ printf("Your total purchase cost is %f\nYour total purchase quantity is %f.\n",t
         totalsalescost += salescost;
         totalsalesquantity += salesquantity;
 
-        printf("Do you want to repeat the operation?(Y/N): \n");
+        printf("Type yes(y) to enter sales information, and no(n) to find out your cost:\n ");
         scanf("%s", &choice);
      } while (choice == 'y' || choice == 'Y');
 
@@ -45,9 +45,11 @@ printf("Your total sales cost is %f\nYour total sales quantity is %f.\n",totalsa
     if(cost<0){
         printf("You can sell it however you want, you have no cost in this coin :)");
     }
-    
+    else{
     printf("Your 1 %s' cost is %f %s\n",coinname,cost,currency);
-    printf("I hope you don't lose money :)");    
+    printf("I hope you don't lose your money :)");   
+    }
+    puts( "" ); 
 
     
     return 0;
