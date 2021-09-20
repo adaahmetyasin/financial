@@ -18,7 +18,7 @@ int main(){
         printf("Please enter how many %s how many %s did you buy: \n",currency,coinname);
         scanf("%f %f",&purchasecost,&purchasequantity);
 
-        if (purchasecost <=0 || purchasequantity <= 0) /* We check if the numbers are positive. */ 
+        if (purchasecost < 0 || purchasequantity < 0) /* We check if the numbers are positive. */ 
         {
             printf("Please enter a valid number!\n");
             printf("Please enter how many %s how many %s did you buy: \n",currency,coinname);
@@ -40,7 +40,7 @@ printf("Your total purchase cost is %f\nYour total purchase quantity is %f.\n",t
         printf("Please enter how many %s and how many %s you sold:\n ",currency,coinname);
         scanf("%f %f",&salescost,&salesquantity);
         
-        if (salescost <= 0 || salesquantity <= 0) /* We check if the numbers are positive. */ 
+        if (salescost < 0 || salesquantity < 0) /* We check if the numbers are positive. */ 
         {
             printf("Please enter a valid number!\n");
             printf("Please enter how many %s how many %s did you buy: \n",currency,coinname);
